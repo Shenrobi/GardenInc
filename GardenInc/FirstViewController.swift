@@ -12,7 +12,9 @@ class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +22,40 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    @IBAction func servicesButtonPressed(_ sender: Any) {
+        
+        self.tabBarController?.selectedIndex = 2
+        
+    }
+    
+    @IBAction func portfolioButtonPressed(_ sender: Any) {
+        
+        self.tabBarController?.selectedIndex = 3
+
+        
+    }
+    
+    @IBAction func aboutUsButtonPressed(_ sender: Any) {
+        
+        self.tabBarController?.selectedIndex = 1
+
+        
+    }
+    
+    @IBAction func contactUsButtonPressed(_ sender: Any) {
+        
+        self.tabBarController?.selectedIndex = 4
+
+        
+    }
+    
+    
+    
+    
+    
+    
+    
 
 }
 
